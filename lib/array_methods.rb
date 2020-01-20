@@ -10,13 +10,12 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
-  counter = 0
-  x = array[counter]
-  while counter < array.length do
-    if array[counter] > x
-      x = array[counter]
+  x = 0 
+  array.length.times {|index|
+    if array[index] > x
+      x = array[index]
     end
-  end
+  }
   x
 end
 
